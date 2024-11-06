@@ -1,0 +1,29 @@
+.memory-game-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    place-items: center;
+    gap: 20px;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+    border-radius: 50%;
+    font-size: 40px;
+    color: transparent;
+}
+
+.box.active{
+    color: initial;
+    pointer-events: none;
+}
+
+.box.matched{
+    pointer-events: none;
+    background-color: gray;
+    color: initial;
+}
